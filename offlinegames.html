@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexa Xotics - Project Details</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img class="logo-placeholder" src="./assets/wakil.png" alt="Mohamed Adel">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li style="padding-right: 30px;"><a href="#" class="active">Projects</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content" style="padding: 20px;">
+            <h1 class="accent-text">C# Offline Games</h1>
+            <h2>Logic & Arcade Collection</h2>
+            <p style="margin-top: 20px; color: var(--text-gray); max-width: 600px;">
+             A diverse suite of classic arcade and puzzle games developed using C# and the .NET framework. This project demonstrates complex state management, collision detection, and user interface design in a desktop environment.
+            </p>
+        </div>
+    </header>
+
+    <div class="prj">
+        <section class="about">
+            <h3 style="padding: 20px;">Project Overview</h3>
+            <p style="padding: 20px;">This collection serves as a portfolio of various game mechanics implemented from scratch. From the classic logic of "Hangman" and "Word Guess" to the real-time movement and collision handling in "Pac-Man" and "Snake," each game was built to master different programming challenges. The project also includes a "Rock Paper Scissors" simulator and a digital drawing tool, showcasing a broad range of interactive software capabilities.</p>
+        </section>
+
+        <hr class="divider">
+
+    
+<section class="projects">
+    <h3 style="padding: 20px; text-align: center; font-size: 1.8rem;">Project Showcase</h3>
+    
+    <div class="gallery-wrapper" style="max-width: 900px; margin: 0 auto; padding: 0 20px;">
+        
+        <div class="main-display-container" style="margin-bottom: 20px;">
+            <div class="project-card" style="height: 550px; cursor: pointer;" onclick="openModal()">
+                <img id="expandedImg" src="./assets/c1.png" alt="Main View" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+            </div>
+        </div>
+
+        <div class="thumbnail-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+            <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c1.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+            <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c2.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+            <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c3.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+            <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c4.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c5.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c6.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c7.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c8.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c9.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c10.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c11.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c12.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c13.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+             <div class="project-card" style="height: 140px; cursor: pointer;">
+                <img src="./assets/c14.png" style="width:100%; height:100%; object-fit:cover;" onclick="changeImage(this)">
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="center-btn">
+            <a href="index.html" style="text-decoration: none;">
+                <button class="main-btn">← Back to Home</button>
+            </a>
+        </div>
+    </div>
+
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <footer class="footer">
+        <section style="padding: 20px;" class="contact">
+            <h3 style="padding: 20px;">Contact Me</h3>
+            <p style="padding: 20px;"><strong>Email:</strong> mohmedelwakil993@gmail.com</p>
+            <p style="padding: 20px;"><strong>Phone:</strong> +20 1157460613</p>
+        </section>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Mohamed Adel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(imgs) {
+            var expandImg = document.getElementById("expandedImg");
+            expandImg.src = imgs.src;
+            // Optional: add a slight fade effect
+            expandImg.style.opacity = 0.8;
+            setTimeout(() => { expandImg.style.opacity = 1; }, 100);
+        }
+
+        function openModal() {
+            var modal = document.getElementById("imageModal");
+            var expandedImg = document.getElementById("expandedImg");
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "flex";
+            modalImg.src = expandedImg.src;
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
